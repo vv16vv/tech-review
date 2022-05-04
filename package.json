@@ -5,13 +5,21 @@
   "main": "index.js",
   "scripts": {
     "run": "npx tsc && node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Viktoria Shirunova",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "babel-jest": "^27.5.1",
     "typescript": "^4.6.4",
     "@types/jest": "^27.5.0",
     "jest": "^28.0.3"
+  },
+  "engines": {
+    "node": ">=16"
   }
 }
